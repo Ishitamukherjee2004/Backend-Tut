@@ -63,7 +63,7 @@ app.get('/', (req, res) => {
     <p>Available Routes:</p>
     <ul>
       <li><a href="/MenuItem">/MenuItem</a></li>
-      <li><a href="/users">/users</a></li>
+      <li><a href="/person">/persons</a></li>
       <!-- Add more routes here -->
     </ul>
   `);
