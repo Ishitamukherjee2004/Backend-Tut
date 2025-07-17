@@ -57,6 +57,17 @@ const personRoutes = require('./routes/personRoutes');
 app.use('/person', personRoutes);
 const menuRoutes = require('./routes/menuRoutes');
 app.use('/MenuItem', menuRoutes);
+app.get('/', (req, res) => {
+  res.send(`
+    <h2>Welcome to the Backend Tutorial API</h2>
+    <p>Available Routes:</p>
+    <ul>
+      <li><a href="/MenuItem">/MenuItem</a></li>
+      <li><a href="/users">/users</a></li>
+      <!-- Add more routes here -->
+    </ul>
+  `);
+});
 
 // app.post('/Person', async(req, res)=>{
 //     // console.log("Person is inserted");
